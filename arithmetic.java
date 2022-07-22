@@ -10,12 +10,26 @@ public class arithmetic {
 			int a = inp.nextInt();
 			System.out.println("Enter b: ");
 			int b = inp.nextInt();
-			System.out.println("Sum of a and b is:" + (a+b));
-			System.out.println("Product of a and b is:" + (a*b));
-			System.out.println("Difference a - b is:" + (a-b));
-			System.out.println("Quotient of a/ b is:" + (a/b));
-			System.out.println("Remainder of a/ b is:" + (a%b));
-		}
+			System.out.println("Sum of a and b is:" + add(a,b));
+			System.out.println("Product of a and b is:" + multiply(a,b));
+			System.out.println("Difference a - b is:" + sub(a,b));
+			System.out.println("Quotient of a/ b is:" + divide(a,b));
+			System.out.println("Remainder of a/ b is:" + rem(a,b));}
 		
+	}
+	public static int 	add(int a, int b) {
+		return a+b;
+	}
+	public static int 	sub(int a, int b) {
+		return a-b;
+	}
+	public static int 	multiply(int a, int b) {
+		return a*b;
+	}
+	public static int 	divide(int a, int b) {
+		return a/b;
+	}
+	public static int 	rem(int a, int b) {
+		return a%b;
 	}
 }
